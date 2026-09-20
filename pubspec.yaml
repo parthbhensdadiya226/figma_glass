@@ -1,0 +1,48 @@
+name: figma_glass
+description: "Figma's Glass effect for Flutter: real refraction, dispersion and frost, with every Glass panel setting (light, refraction, depth, dispersion, frost, splay)."
+version: 0.1.0
+repository: https://github.com/parthbhensdadiya226/figma_glass
+issue_tracker: https://github.com/parthbhensdadiya226/figma_glass/issues
+
+platforms:
+  android:
+  ios:
+  web:
+
+topics:
+  - glass
+  - glassmorphism
+  - figma
+  - shader
+  - blur
+
+screenshots:
+  - description: Glass tab bar and top bar over a scrolling feed.
+    path: doc/feed.gif
+  - description: Player controls on a glass panel over album art.
+    path: doc/music_player.png
+  - description: A glass payment card; dragging it moves the light.
+    path: doc/wallet.png
+  - description: Glass text fields and buttons over a sunset.
+    path: doc/sign_in.png
+  - description: Glass list tiles over a wallpaper.
+    path: doc/gallery.png
+  - description: Playground with a slider for every Figma Glass setting.
+    path: doc/playground.png
+
+environment:
+  sdk: ^3.12.0
+  flutter: ">=3.44.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  shaders:
+    - shaders/glass_refraction.frag
