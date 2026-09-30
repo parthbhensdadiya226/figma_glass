@@ -120,7 +120,11 @@ class RenderGlass extends RenderProxyBox {
     markNeedsPaint();
   }
 
-  set boundaryKey(GlobalKey? v) => _boundaryKey = v;
+  set boundaryKey(GlobalKey? v) {
+    if (v == _boundaryKey) return;
+    _boundaryKey = v;
+    markNeedsPaint();
+  }
 
   @override
   bool get alwaysNeedsCompositing => true;

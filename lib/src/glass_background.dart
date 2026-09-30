@@ -8,10 +8,10 @@ import 'package:flutter/widgets.dart';
 ///
 /// [background] is rendered and snapshotted; [child] is laid over it (glass
 /// panels go in [child]). The snapshot is taken after the first frame, and
-/// again when [background] is replaced by a different widget or changes size.
-/// Rebuilding with the same (for example `const`) background does not
-/// capture again. Set [continuous] to re-capture every frame when the
-/// background moves or animates, such as a scrolling list.
+/// again whenever [background] repaints, so a still background costs a
+/// single snapshot. Set [continuous] to re-capture every frame when the
+/// background moves on its own layer without repainting, such as a
+/// scrolling list.
 class GlassBackground extends StatefulWidget {
   /// Creates the backdrop for the [FigmaGlass] panels in [child].
   const GlassBackground({

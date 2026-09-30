@@ -1,3 +1,11 @@
+## 0.1.1
+
+* `FigmaGlass` repaints when it moves under a different `GlassBackground`,
+  instead of sampling the old one until its next repaint.
+* `GlassCalibration.toString` includes `oppositePeak` and `darkFloor`.
+* `GlassBackground` docs now describe when the snapshot is taken: whenever
+  the background repaints.
+
 ## 0.1.0
 
 * Initial release.

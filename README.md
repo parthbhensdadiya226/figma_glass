@@ -37,7 +37,7 @@ Android phone.
 
 ```yaml
 dependencies:
-  figma_glass: ^0.1.0
+  figma_glass: ^0.1.1
 ```
 
 The shader ships with the package. You don't need to add anything to your

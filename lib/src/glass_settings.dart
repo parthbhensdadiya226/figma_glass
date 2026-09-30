@@ -240,5 +240,6 @@ class GlassCalibration {
   @override
   String toString() =>
       'GlassCalibration(glowGain: $glowGain, rimGain: $rimGain, '
-      'frostScale: $frostScale, refractionGain: $refractionGain)';
+      'frostScale: $frostScale, refractionGain: $refractionGain, '
+      'oppositePeak: $oppositePeak, darkFloor: $darkFloor)';
 }

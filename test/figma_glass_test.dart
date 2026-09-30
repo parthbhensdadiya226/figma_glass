@@ -42,6 +42,12 @@ void main() {
       expect(a.copyWith(), a);
       expect(a.copyWith(frost: 9), isNot(a));
     });
+
+    test('calibration toString lists every gain', () {
+      final text = const GlassCalibration(oppositePeak: 0.5).toString();
+      expect(text, contains('oppositePeak: 0.5'));
+      expect(text, contains('darkFloor: 0.04'));
+    });
   });
 
   testWidgets('FigmaGlass lays out with its child and rebuilds on change', (
