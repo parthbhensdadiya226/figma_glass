@@ -1,6 +1,6 @@
 name: figma_glass
 description: "Figma's Glass effect for Flutter: real refraction, dispersion and frost, with every Glass panel setting (light, refraction, depth, dispersion, frost, splay)."
-version: 0.1.2
+version: 0.1.3
 repository: https://github.com/parthbhensdadiya226/figma_glass
 issue_tracker: https://github.com/parthbhensdadiya226/figma_glass/issues
 funding:

@@ -1,3 +1,10 @@
+## 0.1.3
+
+* README: Android, iOS (simulator) and web are now tested, and the Platforms
+  section shows how to run the example's screenshot test.
+* The example has an integration test that opens every demo and saves a
+  screenshot of each.
+
 ## 0.1.2
 
 * Added a Buy Me a Coffee link (`funding` in pubspec and a Support section in the README).
