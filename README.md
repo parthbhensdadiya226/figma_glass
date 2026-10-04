@@ -231,9 +231,18 @@ setting.
 |:---:|:---:|:---:|
 | ✅ | ✅ | ✅ |
 
-Tested on Android with Impeller (Vulkan). iOS and web use the same Flutter
-APIs (fragment shaders and `RepaintBoundary` snapshots) but haven't been
-tested on devices yet. Reports are welcome in the
+Tested on an Android device with Impeller (Vulkan), on the iOS simulator, and
+in Chrome. The example app has an integration test that opens every demo and
+saves a screenshot of each:
+
+```sh
+cd example
+flutter drive --driver=test_driver/integration_test.dart \
+  --target=integration_test/gallery_test.dart
+```
+
+The repository's **iOS simulator** workflow runs the same test on an iPhone
+simulator; start it from the Actions tab. Reports are welcome in the
 [issue tracker](https://github.com/parthbhensdadiya226/figma_glass/issues).
 
 ## Requirements
